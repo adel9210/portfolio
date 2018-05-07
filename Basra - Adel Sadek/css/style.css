@@ -1,0 +1,331 @@
+body{
+    margin:0;   
+  }
+  
+#wrapper{
+
+    background: url(../img/bg-1.jpg);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+#wrapper:before{
+    height: 100%;
+    content: " ";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.78);
+}
+  /*COM DIV*/
+  .comcontainer{
+    width:100%;
+    height: 200px; 
+    
+}
+
+.comcards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+.comcards  img{
+    box-shadow : 0px 0px 15px #fff
+}
+.playercards > div , .card {
+    /* padding: 5px; */
+    width: 90px;
+    height: 130px;
+    border: 2px solid #51c7d2;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.comscore{
+    margin-left:10px; 
+    padding: 5px;
+    border: 3px solid white;
+}
+
+.comscore p{
+    color:white;
+}
+
+/*MID SEC*/
+
+
+
+
+.backcard{
+    width: 100px;
+    height: 150px; 
+    position: absolute;
+    left:0px;
+    top: 35px;
+}
+
+
+.spaceLand{
+    height: 173px;
+    width: max-content;
+    border: 2px solid #0d1d2d;
+    margin: 20px auto;
+    background: #0d1d2d;
+    box-shadow: 0px 0px 30px #fff
+}
+
+/*player Div*/
+.playercont{
+    width:100%;
+    height: 200px;
+    bottom:  0;
+}
+.playercards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card5 {
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.card6 {
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 2px;
+}
+
+.card7 {
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 2px;
+    
+}
+
+.card8 {
+    padding: 5px;
+    width: 100px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 2px;
+}
+.playerscore {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #2de4c9;
+  width: 12%;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px
+
+}
+
+
+.computerScore {
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #1292a5;
+  width: 12%;
+  /* float: right; */
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+  top: 5%;
+  padding: 5px;
+  border-radius: 5px;
+}
+ p{
+    color: white;
+}
+
+
+li {
+    list-style: none;
+}
+ .deck img , img {
+    /* width: 136px; */
+    height: 130px;
+    position: absolute;
+}
+
+
+.spaceLand {
+
+  text-align: center;
+}
+
+.spaceLand div {
+    display: inline-block;
+    height: 129px;
+    width: 90px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-color: white;
+}
+
+.spaceLand div img {
+    position: relative;
+    top: 0;
+    box-shadow : 0px 0px 15px #fff
+}
+
+
+.playercards img {
+   position: relative;
+   top: 0;
+   box-shadow : 0px 0px 15px #fff
+}
+
+.receve {
+  position: absolute;
+  right: 20%;
+  top: 25%;
+}
+
+button.randomCards {
+    border: 0;
+    background: #090e20;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: -1px 2px 31px #ffffff;
+    transition: all 0.5s;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 17px;
+    color: #fff;
+} 
+
+.playerScore,.computerScore {
+    border: 0;
+    background: #090e20;
+    margin: 0 auto;
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: -1px 2px 31px #ffffff;
+    transition: all 0.5s;
+    margin-left: 30px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+}
+.playerScore:before,.computerScore:before,.randomCards:before,.card:before
+{
+    content: " ";
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/spider-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.playerScore h4,.computerScore h4 {
+
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 10px
+}
+button.randomCards:hover, .newPlayer:hover{
+    background: #f90;
+    cursor: pointer;
+}
+
+.midsec{
+    left: 13px;
+    position: absolute;
+    top: 0;
+}
+
+.img_gif {
+    
+width: 100vw;
+    
+height: 100vh;
+}
+
+.img_gif img {
+    width: 200px;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.img_gif > div
+{
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+.img_gif > div h4 {
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.img_gif > div a
+{
+    border: 0;
+    background: #f90;
+    margin: 0 auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 25px;
+    box-shadow: -1px 2px 31px #ffffff;
+    transition: all 0.5s;
+    color: #fff;
+    text-decoration: none;
+    position: relative
+}
+
+.newPlayer{ /* Btn new Player */
+    border: 0;
+    background: #090e20;
+    padding: 5px 30px;
+    border-radius: 10px;
+    box-shadow: -1px 2px 31px #ffffff;
+    transition: all 0.5s;
+    color: #fff;
+    text-align: center;
+}
+
+.basra{
+    height: 130px;
+    position: absolute;
+    padding-right: 115px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.basra.basra_com{
+    right: 100px;
+}
+
+.basra.basra_player{
+    left: 165px;
+}

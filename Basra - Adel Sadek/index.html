@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_splash.css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+    <title>Welcom To Basra Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div_content">
+            <h2 id="slogan"></h2>
+            <h1 class="titile">Basra Game</h1>
+            <div class="start">
+                <input id ="input" type="text" placeholder="Enter Your Name">
+                <button id="btn" class="play"><a href="#">Play Now</a></button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var inputVal = document.getElementById("input");
+        var slogan = document.getElementById("slogan");
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click",function(){
+           if(inputVal.value == 0 ){
+               alert("Write Your Name ")
+           }else if(inputVal.value.length < 4){
+                alert("Your Name Must be more than 4 ch..")
+           }else{
+               localStorage.setItem("username", inputVal.value )
+                window.location = "game.html";
+           }
+        })
+
+
+        var i =0;
+            var newWord = "ITI UI 38  Basra Game (HTML & CSS & JAVASCRIPT )  ** Created By Adel Sadek :) ";
+        // setInterval Function
+        var WordCount = setInterval(function(){
+            // console.log(slogan.innerHTML.length);
+            var splitWord = newWord.split("")
+            slogan.innerHTML += splitWord[i];
+            i++
+            if(i > splitWord.length){
+                slogan.innerHTML = "";
+                i=0;
+            }
+
+        },200)
+
+    </script>
+</body>
+</html>

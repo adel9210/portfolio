@@ -1,0 +1,34 @@
+section {
+  article{
+    h2.service_heading{
+      color: $grayColor;
+    }
+    h2.service_heading + span{
+      background: $primaryColor;
+    }
+    .boxes{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      grid-column-gap: 30px;
+      padding-top: $paddingTop + 20 ;
+      .icons{
+        font-size: $fontIcon;
+        color: $primaryColor;
+        padding-bottom: $paddingBottom;
+      }
+      div{
+        height: 250px;
+        // background: #2c1a1a;
+        h2{
+          color: $grayColor;
+          font-size: $mainSize + 7;
+        }
+        p{
+          width: 100%;
+          color: $pargraphColor;
+          font-size: $mainSize - 3;
+        }
+      }
+    }
+  }
+}

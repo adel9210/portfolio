@@ -1,0 +1,62 @@
+body, h1, h2, h3, h4, h5{
+   margin: 0;
+   padding: 0;
+   font-family: raleway;
+}
+
+ul{
+  margin: 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    a{
+      text-decoration: none;
+      color: $mainColor;
+    }
+  }
+}
+
+p{
+    font-size: $mainSize -2;
+    color: $mainColor;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: $paddingBottom;
+    padding-top: $paddingTop
+}
+
+h2{
+  font-size: $mainSize + 7;
+  font-weight: lighter;
+}
+
+.container{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto
+}
+
+section{
+  text-align: center;
+  padding-top: $paddingTop + 40;
+  padding-bottom: $paddingBottom + 40;
+}
+
+
+button{
+  padding: 15px 40px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: lighter;
+  font-size: $mainSize;
+  color: $grayColor;
+  background: #fff;
+}
+
+span{
+  background: $primaryColor;
+  height: 3px;
+  width: 50px;
+  display: inline-block;
+}

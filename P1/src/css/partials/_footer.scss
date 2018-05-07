@@ -1,0 +1,31 @@
+section.footer_section{
+  .footer_icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding-top: $paddingTop;
+    div{
+      height: 200px;
+    }
+  }
+
+  h2{
+    color: $grayColor;
+  }
+
+    span{
+      background: $primaryColor;
+    }
+    p{
+      color: $grayColor;
+    }
+    i{
+      font-size: 35px;
+    }
+    div:last-child > h6{
+      color: $primaryColor;
+    }
+
+}

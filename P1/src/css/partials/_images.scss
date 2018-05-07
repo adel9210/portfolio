@@ -1,0 +1,12 @@
+section.images_section{
+  padding-bottom: 0;
+  .images{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    img{
+      height: 250px;
+      width: 100%;
+    }
+  }
+}

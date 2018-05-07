@@ -1,0 +1,55 @@
+%table{
+    display: table;
+    width: 100%;
+}
+
+%tablecell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header{
+    height: 100vh;
+    background: url(../imgs/header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    overflow: hidden;
+    section{
+        @extend %table;
+        span{
+          background: $primaryColor;
+        }
+    }
+    p{
+      width: 60%;
+      font-size: $mainSize - 2;
+      line-height: $mainSize + 5;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        h2{
+          color: $mainColor;
+          font-weight: bold;
+          font-size: $mainSize;
+        }
+    }
+    article{
+        @extend %tablecell;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: $paddingTop + 40;
+        button{
+          background: $primaryColor;
+          color: #fff;
+        }
+    }
+    h1{
+      font-size: $mainSize * 2;
+      font-weight: bold;
+      padding-bottom: $paddingBottom
+    }
+}
