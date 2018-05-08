@@ -1,0 +1,21 @@
+@media only screen and (max-width:991px){
+  .ins{
+    .row{
+      width: 60vw;
+    }
+  }
+   .latest_img_card{
+    height: 100px !important;
+    width: 100px !important;
+    display: inline-block!important;
+  }
+  .img_card{
+    width: 14vw
+  }
+  .text_card{
+    width: 75vw;
+  }
+  .buttons{
+    width: 65vw;
+  }
+}

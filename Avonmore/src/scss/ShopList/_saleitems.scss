@@ -1,0 +1,28 @@
+.cat_card{
+  .box_img{
+    width: 100%;
+    height: 290px;
+    @extend %backgroundStyle
+  }
+
+  @for $i from 1 through 11 {
+  .box:nth-of-type(#{$i})>.box_img{
+    background-image: url('../img/ShopList/img-#{$i}.jpg');
+    }
+  }
+  .btn-custom:first-of-type(){
+    background-color: $borderColor;
+  }
+  h6.price{
+    color: $borderColor;
+  }
+
+  .btn-custom{
+    background-color: #f2f2f2;
+    box-shadow: none
+  }
+  span i{
+    color: #b6b6b6
+  }
+
+}

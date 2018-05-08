@@ -1,0 +1,8 @@
+.single_post{
+  .img_post{
+    width: 100%;
+    height: 584px;
+    background-image: url("../img/SinglePost/full-img-1.jpg");
+    @extend %backgroundStyle;
+  }
+}

@@ -1,0 +1,14 @@
+.related_post{
+  .related_img{
+    height: 335px;
+    width: 100%;
+    background-image: url("../img/SinglePost/img-22.jpg");
+    @extend %backgroundStyle;
+  }
+  .img_section:nth-child(2) .related_img{
+    background-image: url("../img/SinglePost/img-23.jpg");
+  }
+  .img_section:nth-child(3) .related_img{
+    background-image: url("../img/SinglePost/img-24.jpg");
+  }
+}

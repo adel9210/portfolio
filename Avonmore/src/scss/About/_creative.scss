@@ -1,0 +1,14 @@
+.creative{
+  .creative_img > div{
+    height: 400px;
+    background-image: url("../img/About/team-1.jpg");
+    background-position: top;
+    background-size: cover;
+  }
+  .creative_img:nth-child(2) > div{
+    background-image: url("../img/About/team-2.jpg");
+  }
+  .creative_img:nth-child(3) > div{
+    background-image: url("../img/About/team-3.jpg");
+  }
+}

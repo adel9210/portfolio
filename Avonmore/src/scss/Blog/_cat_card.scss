@@ -1,0 +1,18 @@
+.cat_card{
+  .box_img{
+    width: 100%;
+    background-image: url("../img/Blog/mid-img-1.jpg");
+    height: 300px;
+    @extend %backgroundStyle;
+  }
+  @for $i from 2 through 10 {
+  .box:nth-child(#{$i})>.box_img{
+    background-image: url('../img/Blog/mid-img-#{$i}.jpg');
+    }
+  }
+  ul.pagination{
+    li.page-item a{
+          color: $mainColor
+    }
+  }
+}

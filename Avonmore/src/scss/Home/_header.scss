@@ -1,0 +1,25 @@
+.header{
+  background-color: $bg-gray;
+  height: 100vh;
+  background: url(../img/Home/section-bg-1.jpg);
+  @extend %backgroundStyle;
+  background-position: top!important;
+  text-align: center;
+  background-repeat: no-repeat;
+    nav.navbar{
+      background-color: transparent!important;
+    }
+  h1{
+    font-family: lato;
+    font-size: 5rem;
+    font-weight: 800;
+    color: $mainColor;
+  }
+  .row{
+    height: calc(100vh - 56px);
+  }
+  .header-bg{
+    @extend %backgroundStyle;
+    height: 300px
+  }
+}

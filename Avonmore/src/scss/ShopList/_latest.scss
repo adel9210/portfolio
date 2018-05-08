@@ -1,0 +1,27 @@
+.Categaries{
+  h6{
+    font-size: 0.9rem - 0.02rem;
+    font-family: raleway;
+    font-weight: bold;
+  }
+  .latest_img{
+    background-image: url("../img/Blog/small-img-1.jpg");
+    @extend %backgroundStyle;
+    width: 100%;
+    height: 170px;
+  }
+
+  .latest_img_card{
+    height: 85px;
+    width: 100%;
+    @extend %backgroundStyle;
+  }
+
+  .latest_img_card{
+    background-image: url("../img/Blog/small-img-2.jpg");
+  }
+
+  .latest_img_card.card_2{
+    background-image: url("../img/Blog/small-img-3.jpg");
+  }
+}

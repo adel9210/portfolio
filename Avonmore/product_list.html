@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="dest/css/blog.css"> -->
+  <!-- <link rel="stylesheet" href="dest/css/shop_grid.css"> -->
+  <link rel="stylesheet" href="node_modules/jquery-ui/themes/base/all.css">
+  <link rel="stylesheet" href="dest/css/shoplist.css">
+  <title>Product List</title>
+</head>
+<body>
+  <!-- Start Header Section -->
+  <section class="header mb-5">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand logo" href="#">AV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="menu-button"><span></span><span></span><span></span></div>
+      </button>
+      <!-- Menu -->
+      <div class="nav_elements">
+        <ul class="d-flex justify-content-around ml-auto">
+          <li><a href="index.html">Home</a><span class="under"></span></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="blog_single.html">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio_single.html">S-portfolio</a></li>
+          <li><a href="product_list.html">P_list</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="shop_item.html">Shop</a></li>
+          <li><a href="shopping.html">Shopping</a></li>
+        </ul>
+      </div>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <div class="menu-button menu-lg"><span></span><span></span><span></span></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>  <!-- End Header Section -->
+  <!-- End Header Section -->
+
+  <!-- Start Blog Standard Section -->
+  <section class="blog_standard py-5">
+    <div class="container py-5">
+      <h4 class="italic_heading">Shop Grid</h4>
+      <h2 class="pb-2">Our Product</h2>
+    </div>
+</section>
+  <!-- End Blog Standard Section -->
+
+  <!-- Start Wrapper Section -->
+  <section class="cat_card py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Search Form -->
+        <div class="col-lg-4">
+            <form class="pb-3">
+              <input class="form-control mr-sm-2 position-relative" type="search" placeholder="Type and Hit Enter" aria-label="Search w-100">
+              <i class="fa fa-search position-absolute text-muted" style="right:20px; top:10px"></i>
+            </form>
+            <!-- Start Categaries Section -->
+            <section class="Categaries">
+              <!-- Start Categaries Item Section -->
+              <div class="catItem py-4">
+                  <h5 class="pb-2">Product Categories</h5>
+                  <span class="under ml-0"></span>
+                  <p class="d-flex">Furniture <span class="text-right w-100 d-inline-block">( 31 )</span></p>
+                  <hr>
+                  <p class="d-flex">Vases <span class="text-right w-100 d-inline-block">( 13 )</span></p>
+                  <hr>
+                  <p class="d-flex">Pictures <span class="text-right w-100 d-inline-block">( 22 )</span></p>
+                  <hr>
+                  <p class="d-flex">Lighting <span class="text-right w-100 d-inline-block">( 50 )</span></p>
+                  <hr>
+                  <p class="d-flex">Figurines <span class="text-right w-100 d-inline-block">( 33 )</span></p>
+                  <hr>
+                  <p class="d-flex">Plants <span class="text-right w-100 d-inline-block">( 21 )</span></p>
+                  <hr>
+                  <p class="d-flex">Mirror <span class="text-right w-100 d-inline-block">( 86 )</span></p>
+                  <hr>
+                  <p class="d-flex">Candles <span class="text-right w-100 d-inline-block">( 86 )</span></p>
+              </div>
+              <!-- End Categaries Item Section -->
+
+              <!-- Start Instagram  Section -->
+              <div class="ins py-4">
+                <h5 class="pb-2">Filter by Price</h5>
+                <span class="under ml-0"></span>
+                <div id="slider-range" class="mb-2"></div>
+                <p>
+                  <label for="amount">Price range:</label>
+                  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;" />
+                </p>
+                <input type="submit" class="btn-custom" value="FILTER">
+                <div class="row">
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img mb-2"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                  <div class="col-lg-3 ins-img"></div>
+                </div>
+              </div>
+              <!-- Start Instagram  Section -->
+
+              <!-- Start Wideget  Section -->
+              <div class="wideget py-4">
+                <h5 class="pb-2">Color Filter</h5>
+                <span class="under ml-0"></span>
+              </div>
+              <div class="row">
+                <li class="col-lg-4 mb-2">White</li>
+                <li class="col-lg-4 mb-2">Red</li>
+                <li class="col-lg-4 mb-2">Yellow</li>
+                <li class="col-lg-4 mb-2">Orange</li>
+                <li class="col-lg-4 mb-2">Black</li>
+                <li class="col-lg-4 mb-2">Beige</li>
+                <li class="col-lg-4 mb-2">Green</li>
+                <li class="col-lg-4 mb-2">Blue</li>
+                <li class="col-lg-4 mb-2">Purple</li>
+              </div>
+              <!-- End Wideget  Section -->
+
+              <!-- Start Latest News  Section -->
+              <div class="wideget py-4">
+                <h5 class="pb-2">Previously Viewed</h5>
+                <span class="under ml-0"></span>
+                <div class="latest">
+                    <div class="row py-4">
+                      <div class="col-4 mb-3">
+                        <div class="latest_img_card">
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <h6 class="pt-0">Ceramic Textured Vase </h6>
+                        <figure>
+                          <figcaption class="text-muted pb-3"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></figcaption>
+                          <h6>$18.00</h6>
+                        </figure>
+                      </div>
+                      <!-- / -->
+                      <div class="col-4 mb-3">
+                        <div class="latest_img_card card_2">
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <h6 class="pt-0">Air Plant Terrarium.</h6>
+                        <figure>
+                          <figcaption class="text-muted pb-3"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i></span></figcaption>
+                          <h6>$18.00</h6>
+                        </figure>
+                      </div>
+                      <div class="col-4">
+                        <div class="latest_img_card">
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <h6 class="pt-0">Ceramic Textured Vase </h6>
+                        <figure>
+                          <figcaption class="text-muted pb-3"><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i></span></figcaption>
+                          <h6>$18.00</h6>
+                        </figure>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- End Latest News Item Section -->
+            </section>
+            <!-- End Categaries Section -->
+        </div>
+        <div class="col-lg-8">
+          <div class="search_filter col-lg-12 p-2 my-3 d-flex justify-content-between align-items-center">
+              <div class="left">
+                <!-- <p>Showing 1-12 of 230 items</p> -->
+                <form action="">
+                <input type="text" placeholder="Showing 1-12 of 230 items" class="form-control border-0 pr-2">
+                </form>
+              </div>
+              <div class="right ">
+                <p class="d-inline-block pr-4">Sort by Position <i class="fa fa-angle-down"></i></p>
+                <i class="fa fa-th-large"></i>
+                <i class="fa fa-bars pr-2"></i>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 pb-4">
+              <div class="row">
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+                <div class="col-lg-4 box">
+                  <div class="box_img">
+                  </div>
+                </div>
+                <div class="col-lg-8 mb-5">
+                  <div>
+                    <figure class="pt-1 mb-0 d-flex justify-content-between align-items-center">
+                      <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                    </figure>
+                    <h4 class="py-2">Snug. Vase Low / Copper</h4>
+                    <h6 class="pt-2 pb-2 price">$15.00</h6>
+                    <p class="py-1">Fusce lacinia molestie diam, sit amet condimentum tortor sagittis quis. Quisque id mauris turpis. Curabitur ultrices orci non auctor interdum. Sed id lacus sagittis, fermentum lacus eleifend, posuere sem. Aenean dignissim rutrum neque rhoncus posuere. Aliquam imperdiet orci hendrerit tortor congue maximus. Ut consequat nunc vestibulum...</p>
+                    <button class="btn-custom mt-4 py-2 border-0">ADD TO CART</button>
+                    <button class="btn-custom px-3"><i class="far fa-heart"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-eye"></i></button>
+                    <button class="btn-custom px-3"><i class="fa fa-share"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="col-lg-12 d-flex justify-content-center">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link px-4" href="#">
+                        <i class="fa fa-arrow-left"></i>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                      <a class="page-link px-4" href="#">
+                        <i class="fa fa-arrow-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Wrapper Section -->
+
+  <!-- Start Footer Section -->
+  <footer class="bg-dark py-5 text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">About Us</h2>
+          <span class="under"></span>
+          <p class="pb-3 text-light">Morbi eu purus eget tellus fringilla malesuada eget nec nisi. Etiam nec dolor porttitor, cursus elit quis, tristique erat.   Sed rhoncus molestie elit sit amet viverra. </p>
+          <ul>
+            <li><i class="fa fa-map-marker"></i>90-120 Swanston St,Melbourne VIC 3000, Australia</li>
+            <li><i class="fa fa-phone"></i>61-395-599-559</li>
+            <li><i class="fa fa-envelope"></i>support@gtcreators.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">Recent News</h2>
+          <span class="under"></span>
+          <div class="row">
+            <div class="col-2 col-md-4 col-lg-2 mb-2">
+              <img src="dest/img/Home/img-9.jpg"  class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+            <div class="col-2 col-md-4 col-lg-2 mb-2">
+              <img src="dest/img/Home/img-10.jpg" class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+            <div class="col-2 col-md-4 col-lg-2 sm-2">
+              <img src="dest/img/Home/img-11.jpg" class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">Our Gallery</h2>
+          <span class="under"></span>
+          <div class="row">
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-1(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-2(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-3(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-4(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            </div>
+            <div class="row mt-2">
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-5.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-6.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-7.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-8.jpg" alt="" class="w-100 img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+  <!-- Start Copyright -->
+    <section class="Copyright text-center p-3 text-muted" style="background-color:#242424">
+      Copyright (c) 2018 Copyright Adel Sadek All Rights Reserved.
+    </section>
+  <!-- End Copyright-->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="dest/Js/nav.js"></script>
+  <!-- jQuery-ui Libary -->
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+  <script>
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  </script>
+</body>
+</html>

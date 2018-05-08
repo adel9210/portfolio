@@ -1,0 +1,29 @@
+.blog_standard{
+  background-image: url("../img/portfolio/section-bg-8.jpg");
+  background-position: top!important;
+}
+
+i{
+  margin-right: 20px;
+  color: #CCC;
+  cursor: pointer;
+  padding: 3px;
+  transition: all 0.5s;
+}
+i.first:first-child(){
+  margin-left: 20px;
+  color: $mainColor;
+
+}
+i:hover{
+  color: $mainColor;
+}
+.arrow{
+  i{
+    color: $mainColor
+  }
+}
+
+button:hover{
+  background-color: $borderColor!important;
+}

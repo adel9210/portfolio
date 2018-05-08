@@ -1,0 +1,35 @@
+.Portfolio{
+  .row{
+    margin-right: 0;
+    div{
+      padding-right: 0!important;
+      padding-left:  0!important;
+    }
+  }
+  .Portfolio_img{
+    background-image: url(../img/Home/img-1.jpg);
+    @extend %backgroundStyle;
+    height: 430px
+  }
+  .Portfolio_img:nth-child(2){
+    background-image: url(../img/Home/img-2.jpg);
+  }
+  .Portfolio_img:nth-child(3){
+    background-image: url(../img/Home/img-3.jpg);
+  }
+  .Portfolio_img:nth-child(4){
+    background-image: url(../img/Home/img-4.jpg);
+  }
+
+  .Portfolio_projects{
+    background-color: $borderColor
+  }
+  h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  h5:last-child(){
+    font-size: 1.5rem
+  }
+}
