@@ -1,0 +1,29 @@
+.Categaries{
+  h5{
+    font-size: 1.1rem;
+    font-family: raleway;
+  }
+  span.under{
+    background: $borderColor;
+    width: 30px;
+  }
+  .ins_box{
+    padding: 0 5px;
+  }
+  .ins-img{
+    height: 82px;
+    width: 100%;
+    background-image: url("../img/Blog/img-1.jpg");
+    @extend %backgroundStyle;
+  }
+
+  @for $i from 2 through 8 {
+  .ins_box:nth-child(#{$i}) > div{
+    background-image: url('../img/Blog/img-#{$i}.jpg');
+    }
+  }
+
+}
+
+
+// Media Blog Page

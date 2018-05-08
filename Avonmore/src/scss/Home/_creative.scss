@@ -1,0 +1,16 @@
+.creative{
+  background: url(../img/Home/section-bg-4.jpg);
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  overflow: hidden;
+  @extend %backgroundStyle;
+  span{
+    margin-left:  0;
+    }
+    // .creative_img{
+    //   background-image: url(../img/Home/promo-1.png);
+    //   height: 100%;
+    //   width: 100%;
+    // }
+}

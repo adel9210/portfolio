@@ -1,0 +1,17 @@
+.work{
+  background-image: url("../img/Home/section-bg-19.jpg");
+  @extend %backgroundStyle;
+    li{
+      padding-bottom: 6px;
+      span{
+        width: 30px;
+        text-align: left;
+    }
+    .active{
+      color: $borderColor;
+    }
+  }
+  li:last-child{
+    padding-bottom: 24px;
+  }
+}

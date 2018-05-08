@@ -1,0 +1,40 @@
+.single_item{
+  .sec_img{
+    height: 600px;
+    @extend %backgroundStyle;
+    background-image: url("../img/ShopItem/shop-single-img-1.jpg");
+  }
+  i{
+    color: #777
+  }
+  .left{
+    flex: 1 1;
+  }
+  .price{
+    color: $borderColor;
+  }
+  .offer{
+    text-decoration: line-through;
+    color: #777
+  }
+  .btn-custom:first-of-type(){
+    background-color: $borderColor;
+  }
+  .btn-custom{
+    background-color: #f2f2f2;
+    box-shadow: none
+  }
+  span i{
+    color: #b6b6b6
+  }
+  .img{
+    height: 150px;
+    @extend %backgroundStyle;
+  }
+
+  @for $i from 1 through 4 {
+    .box_img:nth-of-type(#{$i}) > .img{
+        background-image: url('../img/shopItem/imgshop-#{$i}.jpg');
+        }
+  }
+}

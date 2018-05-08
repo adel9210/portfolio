@@ -1,0 +1,265 @@
+@charset "UTF-8";
+footer {
+  background-color: #303233; }
+  footer span.under {
+    background: #fcca03;
+    margin-left: 0; }
+  footer li i {
+    padding-right: 18px; }
+  footer h2 {
+    font-size: 1.2rem;
+    color: white; }
+  footer li, footer p {
+    font-size: 0.9rem; }
+
+@font-face {
+  src: url("../fonts/Exodus-PersonalUse-Stencil.otf");
+  font-family: "Exodus"; }
+
+.menu-button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-left: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  .menu-button span {
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    background: #303233;
+    transition: all 0.5s; }
+  .menu-button span:nth-child(2) {
+    top: 13px;
+    left: 6px; }
+  .menu-button span:nth-child(3) {
+    top: 21px;
+    left: 17px; }
+  .menu-button:hover span {
+    left: 0; }
+
+.logo {
+  color: #303233; }
+
+.nav_elements {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 95%; }
+  .nav_elements ul {
+    position: absolute;
+    right: 0;
+    width: 60vw; }
+    .nav_elements ul li {
+      font-weight: 400; }
+      .nav_elements ul li a {
+        text-decoration: none;
+        color: #303233;
+        border: 1px solid transparent;
+        /* this */
+        transition: all 0.5s; }
+        .nav_elements ul li a:hover {
+          border-bottom: 1px solid #fcca03; }
+
+.animateNav {
+  position: absolute !important;
+  top: 16px !important;
+  left: 0 !important;
+  -webkit-transform: rotate(128deg) !important; }
+
+.animateNav2 {
+  position: absolute !important;
+  top: 16px !important;
+  left: 0 !important;
+  -webkit-transform: rotate(-128deg) !important; }
+
+body, h1, h2, h3, h4, h5, ul, p {
+  margin: 0;
+  padding: 0; }
+
+.portfolio_header_bg {
+  background-position: center !important;
+  background-size: cover !important; }
+
+.btn-custom {
+  background: #FFF;
+  padding: 8px 40px;
+  box-shadow: 2px 2px 11px #d4d4d4, 0px 0px 6px #d4d4d4;
+  text-transform: uppercase;
+  border: 0;
+  font-weight: bold;
+  color: #303233;
+  cursor: pointer;
+  transition: all 0.3s ease-in; }
+
+.btn-custom:hover, button {
+  background: #fcca03; }
+
+.page-link {
+  transition: all 0.5s; }
+
+.page-item.active .page-link {
+  background-color: #fcca03 !important;
+  border-color: #fcca03 !important;
+  color: #303233 !important; }
+
+.page-link:hover {
+  background-color: #fcca03;
+  border-color: #fcca03;
+  color: #303233; }
+
+.logo {
+  font-family: "Exodus";
+  font-size: 40px; }
+
+p {
+  font-size: 0.88rem;
+  font-family: lato;
+  color: #777; }
+
+hr {
+  margin-bottom: 0.9rem; }
+
+.italic_heading {
+  font-size: 1rem;
+  font-family: Kaushan Script;
+  color: #303233; }
+
+span.under {
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  background: #fcca03 !important; }
+
+.center_div {
+  text-align: center; }
+  .center_div h4 {
+    margin-bottom: 5px; }
+  .center_div p {
+    width: 50%;
+    margin: 0 auto; }
+
+h2, h5 {
+  font-family: raleway;
+  font-weight: bold;
+  color: #303233; }
+
+h5 {
+  font-size: 1.1rem; }
+
+ul {
+  list-style: none; }
+
+li.bollet::before {
+  content: "•";
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #fcca03; }
+
+.a_custom {
+  font-size: 0.7rem;
+  color: #303233; }
+
+span {
+  font-family: lato !important;
+  font-size: 0.8rem; }
+
+.box_overlay {
+  cursor: pointer;
+  overflow: hidden; }
+  .box_overlay img {
+    transition: all 0.5s ease-in; }
+  .box_overlay i {
+    font-size: 20px;
+    color: #333; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s ease-in; }
+
+.box_overlay:hover .overlay {
+  opacity: 1; }
+
+.box_overlay:hover > img {
+  transform: scale(1.1); }
+
+@media only screen and (min-width: 768px) {
+  footer .row > div {
+    padding: 0 5px !important; } }
+
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 15px; }
+  h1 {
+    font-size: 3rem !important; }
+  h2 {
+    font-size: 1.5rem; }
+  .menu-lg {
+    display: none; }
+  .nav_elements ul {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    height: 300px;
+    width: 100% !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start !important; }
+    .nav_elements ul li {
+      padding-left: 10px;
+      width: 100%;
+      cursor: pointer;
+      text-align: center; }
+      .nav_elements ul li span {
+        margin-bottom: 0; }
+      .nav_elements ul li a {
+        text-decoration: none;
+        color: #303233;
+        transition: background-color 0.5s, border-color 1s;
+        border: 2px solid transparent;
+        width: 100%; }
+        .nav_elements ul li a:hover {
+          border-bottom: 2px solid #fcca03; } }
+
+.portfolio_header_bg {
+  background-image: url("../img/portfolio/section-bg-8.jpg");
+  background-position: top !important; }
+
+.portfolio_header_bg {
+  background-attachment: fixed; }
+
+.nav_section li {
+  cursor: pointer; }
+  .nav_section li span {
+    margin-bottom: 0; }
+  .nav_section li a {
+    text-decoration: none;
+    color: #303233;
+    transition: background-color 0.5s, border-color 1s;
+    border: 2px solid transparent;
+    width: 100%; }
+    .nav_section li a:hover {
+      border-bottom: 2px solid #fcca03;
+      color: #303233;
+      text-decoration: none; }
+
+@media only screen and (max-width: 991px) {
+  .nav_section li {
+    padding: 5px;
+    width: 100%;
+    text-align: center; }
+    .nav_section li .under {
+      display: none; } }

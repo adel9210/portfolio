@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="dest/css/blog.css"> -->
+  <!-- <link rel="stylesheet" href="dest/css/shop_grid.css"> -->
+  <!-- <link rel="stylesheet" href="dest/css/shoplist.css"> -->
+  <link rel="stylesheet" href="dest/css/shopitem.css">
+  <title>Shop Item </title>
+</head>
+<body>
+  <!-- Start Header Section -->
+  <section class="header mb-5">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand logo" href="#">AV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="menu-button"><span></span><span></span><span></span></div>
+      </button>
+      <!-- Menu -->
+      <div class="nav_elements">
+        <ul class="d-flex justify-content-around ml-auto">
+          <li><a href="index.html">Home</a><span class="under"></span></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="blog_single.html">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio_single.html">S-portfolio</a></li>
+          <li><a href="product_list.html">P_list</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="shop_item.html">Shop</a></li>
+          <li><a href="shopping.html">Shopping</a></li>
+        </ul>
+      </div>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <div class="menu-button menu-lg"><span></span><span></span><span></span></div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>  <!-- End Header Section -->
+  <!-- End Header Section -->
+
+  <!-- Start Blog Standard Section -->
+  <section class="blog_standard py-5">
+    <div class="container py-5">
+      <h4 class="italic_heading">what i want to buy</h4>
+      <h2 class="pb-2">Shopping Cart</h2>
+    </div>
+  </section>
+  <!-- End Blog Standard Section -->
+  <section class=" py-5">
+    <div class="container">
+      <div class="row">
+        <div class="table-responsive">
+          <table class="table">
+          <thead  class="thead-light">
+            <tr>
+              <th class="w-50">product</th>
+              <th class="">Qty</th>
+              <th>ID nomber</th>
+              <th>price</th>
+              <th>subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="d-flex justify-content-around border-0 py-4 w-100">
+                <div>
+                  <img src="dest/img/cart/widget-img-1.jpg"alt="">
+                </div>
+                <div class="pl-2">
+                  <h5>Geometric Wooden Vase</h5>
+                  <p class="w-75 py-2">Suspendisse maximus eget neque eget accumsan. Sed eu erat at erat lobortis volutpat.</p>
+                </div>
+              </td>
+              <td>
+                <input type="number" class="w-25 text-center" value="1">
+              </td>
+              <td>
+                <span class="text-muted">GWV-1345568721</span>
+              </td>
+              <td>
+                $50
+              </td>
+              <td>$50</td>
+              <td><i class="fa fa-trash text-muted pl-4"></i></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="d-flex justify-content-around border-0 py-4 w-100">
+                <div>
+                  <img src="dest/img/cart/widget-img-2.jpg"alt="">
+                </div>
+                <div class="pl-2">
+                  <h5>Geometric Wooden Vase</h5>
+                  <p class="w-75 py-2">Suspendisse maximus eget neque eget accumsan. Sed eu erat at erat lobortis volutpat.</p>
+                </div>
+              </td>
+              <td>
+                <input type="number" class="w-25 text-center" value="1">
+              </td>
+              <td>
+                <span class="text-muted">GWV-1345568721</span>
+              </td>
+              <td>
+                $120
+              </td>
+              <td>$170</td>
+              <td><i class="fa fa-trash text-muted pl-4"></i></td>
+            </tr>
+          </tbody>
+          </table>
+          <!-- <div class="input-group mb-3  w-25">
+            <div class="input-group-prepend">
+              <button><span class="" id="basic-addon1">CUPON CODE</span></btton>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+
+          </div> -->
+          <button type="button" name="button" class="btn-custom ml-3 btn-check">CUPON CODE</button>
+          <input type="text" name="" value="" class="form-control d-inline-block w-25 rounded-0" >
+          <button type="button" class="float-right btn-custom mr-3">UPDATE CART</button>
+          <hr>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!-- Calculator Shopping -->
+  <section class="Calculator py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <h4>Calculator Shopping</h4>
+          <span class="under ml-0"></span>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Country</label>
+              <select class="form-control" name="">
+                <option value=""></option>
+              </select>
+              <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
+              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Postalcode / Zip</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">State / province</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 offset-2">
+          <h3>Cart Total</h3>
+          <span class="under ml-0"></span>
+          <div class="py-3 d-flex justify-content-between">
+            <h5>subtotal</h5>
+            <span>$680.00</span>
+          </div>
+          <hr>
+          <div class="py-3 d-flex justify-content-between">
+            <h5>Shipping and handling</h5>
+            <span>Local Pickup</span>
+          </div>
+          <hr>
+          <div class="py-3 d-flex justify-content-between">
+            <h5>Order Total</h5>
+            <span>$680.00</span>
+          </div>
+          <hr>
+          <button type="button" name="button" class="btn btn-custom btn-check">PROCEED CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Calculator Shopping -->
+  <!-- Start Footer Section -->
+  <footer class="bg-dark py-5 text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">About Us</h2>
+          <span class="under"></span>
+          <p class="pb-3 text-light">Morbi eu purus eget tellus fringilla malesuada eget nec nisi. Etiam nec dolor porttitor, cursus elit quis, tristique erat.   Sed rhoncus molestie elit sit amet viverra. </p>
+          <ul>
+            <li><i class="fa fa-map-marker"></i>90-120 Swanston St,Melbourne VIC 3000, Australia</li>
+            <li><i class="fa fa-phone"></i>61-395-599-559</li>
+            <li><i class="fa fa-envelope"></i>support@gtcreators.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">Recent News</h2>
+          <span class="under"></span>
+          <div class="row">
+            <div class="col-2 col-md-4 col-lg-2 mb-2">
+              <img src="dest/img/Home/img-9.jpg"  class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+            <div class="col-2 col-md-4 col-lg-2 mb-2">
+              <img src="dest/img/Home/img-10.jpg" class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+            <div class="col-2 col-md-4 col-lg-2 sm-2">
+              <img src="dest/img/Home/img-11.jpg" class="w-100 img-responsive" alt="">
+            </div>
+            <div class="col-10 col-md-8 col-lg-10">
+              <p><i>14/07/2016</i></p>
+              <h6>Morbi eu purus eget tellus fringilla </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-4 col-12">
+          <h2 class="pb-2">Our Gallery</h2>
+          <span class="under"></span>
+          <div class="row">
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-1(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-2(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-3(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-4(1).jpg" alt="" class="w-100 img-responsive">
+            </div>
+            </div>
+            <div class="row mt-2">
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-5.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-6.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-7.jpg" alt="" class="w-100 img-responsive">
+            </div>
+            <div class="col-md-3 col-3">
+              <img src="dest/img/Home/img-8.jpg" alt="" class="w-100 img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+  <!-- Start Copyright -->
+    <section class="Copyright text-center p-3 text-muted" style="background-color:#242424">
+      Copyright (c) 2018 Copyright Adel Sadek All Rights Reserved.
+    </section>
+  <!-- End Copyright-->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script> -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="dest/Js/nav.js"></script>
+  </body>
+</html>

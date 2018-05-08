@@ -1,0 +1,19 @@
+footer{
+  background-color: $mainColor;
+  span.under{
+    background: $borderColor;
+    margin-left: 0;
+  }
+  li{
+    i{
+      padding-right: 18px;
+    }
+  }
+  h2{
+    font-size: 1.2rem;
+    color: white;
+  }
+  li,p{
+    font-size: 0.9rem
+  }
+}

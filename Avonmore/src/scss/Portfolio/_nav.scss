@@ -1,0 +1,31 @@
+.nav_section{
+  li{
+    cursor: pointer;
+      span{
+        margin-bottom: 0;
+      }
+      a{
+        text-decoration: none;
+        color: $mainColor;
+        transition: background-color 0.5s, border-color 1s;
+        border: 2px solid transparent;
+        width: 100%;
+        &:hover{
+          border-bottom: 2px solid $borderColor;
+          color: $mainColor;
+          text-decoration: none;
+
+        }
+      }
+  }
+  @media only screen and (max-width: 991px){
+  li{
+    padding:5px;
+    width: 100%;
+    text-align: center;
+      .under{
+        display: none;
+      }
+  }
+}
+}

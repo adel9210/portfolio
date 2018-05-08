@@ -1,0 +1,289 @@
+@import "footer";
+
+@font-face{
+  src: url("../fonts/Exodus-PersonalUse-Stencil.otf");
+  font-family: "Exodus";
+}
+
+.portfolio_header_bg, .blog_standard{
+  background-attachment: fixed;
+}
+
+.menu-button{
+  display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-left: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+      span{
+      display: inline-block;
+      height: 2px;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      left: 0;
+      background: $mainColor;
+      transition: all 0.5s
+      }
+      span:nth-child(2){
+        top: 13px;
+        left: 6px
+      }
+      span:nth-child(3){
+        top: 21px;
+        left: 17px
+      }
+    &:hover span{
+        left: 0;
+      }
+}
+
+.logo{
+  color: $mainColor
+}
+
+// Nav Elements Style
+.nav_elements{
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 95%;
+    ul{
+      position: absolute;
+      right: 0;
+      width: 60vw;
+        li{
+          font-weight:400;
+            a{
+              text-decoration: none;
+              color: $mainColor;
+              border: 1px solid transparent; /* this */
+              transition: all 0.5s;
+                &:hover{
+                  border-bottom: 1px solid $borderColor;
+                }
+            }
+        }
+    }
+}
+
+.animateNav{
+  position: absolute!important;
+  top: 16px!important;
+  left: 0!important;
+  -webkit-transform: rotate(128deg)!important;
+}
+
+.animateNav2{
+  position: absolute!important;
+  top: 16px!important;
+  left: 0!important;
+  -webkit-transform: rotate(-128deg)!important;
+}
+
+body,h1,h2,h3,h4,h5,ul,p{
+  margin: 0;
+  padding: 0;
+}
+
+%backgroundStyle{
+  background-position: center!important;
+  background-size: cover!important;
+}
+
+.btn-custom{
+  background: #FFF;
+  padding: 8px 40px;
+  box-shadow: 2px 2px 11px #d4d4d4, 0px 0px 6px #d4d4d4;
+  text-transform: uppercase;
+  border: 0;
+  font-weight: bold;
+  color: $mainColor;
+  cursor: pointer;
+  transition: all 0.3s ease-in
+}
+
+.btn-custom:hover,button{
+  background: $borderColor;
+}
+
+.page-link{
+  transition: all 0.5s;
+}
+
+.page-item.active .page-link{
+  background-color: $borderColor!important;
+  border-color:  $borderColor!important;
+  color: $mainColor!important
+}
+
+.page-link:hover{
+  background-color: $borderColor;
+  border-color:  $borderColor;
+  color: $mainColor
+}
+
+.logo{
+  font-family: "Exodus";
+  font-size: 40px;
+}
+
+p{
+  font-size: .9rem - 0.02rem;
+  font-family: lato;
+  color: #777
+}
+
+hr{
+  margin-bottom: 0.9rem;
+  // margin-top: 0.9rem;
+}
+
+.italic_heading{
+  font-size: 1rem;
+  font-family: Kaushan Script;
+  color: $mainColor;
+}
+
+span.under{
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  background: $borderColor!important;
+}
+
+.center_div{
+  text-align: center;
+    h4{
+      margin-bottom: 5px;
+    }
+    p{
+      width: 50%;
+      margin: 0 auto;
+    }
+}
+
+h2,h5{
+  font-family: raleway;
+  font-weight: bold;
+  color: $mainColor;
+}
+
+h5{
+  font-size: 1.1rem;
+}
+
+ul{
+  list-style: none;
+}
+
+li.bollet::before {
+  content: "•";
+  font-size: 1.5rem;
+  margin-right:  10px;
+  color: $borderColor;
+}
+
+.a_custom{
+  font-size: 0.7rem;
+  color: $mainColor
+}
+
+span{
+  font-family: lato!important;
+  font-size: 0.8rem;
+}
+
+
+// overlay section
+.box_overlay{
+  cursor: pointer;
+  overflow: hidden;
+    img{
+        transition: all 0.5s ease-in;
+       }
+    i{
+        font-size: 20px;
+        color: #333
+     }
+     .overlay_item{
+       top: 0;
+       left: 0;
+     }
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s ease-in
+}
+
+.box_overlay:hover .overlay{
+  opacity: 1;
+}
+
+.box_overlay:hover > img{
+  transform: scale(1.1);
+}
+// Medai Query
+@media only screen and (min-width: 768px){
+  footer .row > div{
+    padding: 0 5px!important;
+  }
+}
+
+@media only screen and (max-width: 991px){
+  html{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 3rem!important;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  .menu-lg{
+    display: none;
+  }
+  .nav_elements{
+    ul{
+      position: absolute;
+      right: 0;
+      top: 50px;
+      height: 300px;
+      width: 100%!important;
+      background-color: rgba(255,255,255,0.9);
+      z-index: 2;
+      flex-direction: column;
+      align-items:  flex-start!important;
+        li{
+          padding-left: 10px;
+          width: 100%;
+          cursor: pointer;
+          text-align: center;
+            span{
+              margin-bottom: 0;
+            }
+              a{
+                text-decoration: none;
+                color: $mainColor;
+                transition: background-color 0.5s, border-color 1s;
+                border: 2px solid transparent;
+                width: 100%;
+                &:hover{
+                  border-bottom: 2px solid $borderColor;
+                }
+              }
+        }
+    }
+  }
+}

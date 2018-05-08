@@ -1,0 +1,24 @@
+.related_product{
+  .box_img{
+    width: 100%;
+    background-image: url("../img/shopGrid/mid-img-1.jpg");
+    height: 300px;
+    @extend %backgroundStyle
+  }
+
+  @for $i from 1 through 4 {
+  .box:nth-child(#{$i})>.box_img{
+    background-image: url('../img/shopGrid/img-#{$i}.jpg');
+    }
+  }
+  .page-item.active .page-link{
+    background-color: $borderColor;
+    border-color:  $borderColor;
+    color: $mainColor
+  }
+  ul.pagination{
+    li.page-item a{
+          color: $mainColor
+    }
+  }
+}
