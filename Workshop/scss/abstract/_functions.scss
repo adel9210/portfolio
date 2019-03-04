@@ -1,0 +1,24 @@
+
+    @mixin alignment($jus, $align, $dir ) {
+        display: flex;
+        -webkit-box-pack: $jus;
+        -ms-flex-pack: $jus;
+        justify-content: $jus;
+        -webkit-box-align: $align;
+        -ms-flex-align: $align;
+        align-items: $align;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: $dir;
+        flex-direction: $dir;
+    }
+
+    @mixin background-position($position, $size, $repeat){
+        background-position: $position;
+        background-size: $size;
+        background-repeat: $repeat
+
+    }
+
+
+

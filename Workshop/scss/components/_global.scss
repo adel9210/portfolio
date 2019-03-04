@@ -1,0 +1,49 @@
+/*
+********** General Settings **********
+*/
+ul, h1, h2, h3, h4, h5, h6, p{
+    margin: 0!important;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        text-decoration: none
+    }
+}
+
+.head-title{
+    color: $main-color;
+    font-family: $optima;
+    h2{
+        font-size: $size * 3.6;
+    }
+    
+    & p{
+        font-size: $size * 2;
+        font-family: $segoeui;
+    }
+    @media screen and (max-width: 767px){
+     & h2{
+         font-size: $size * 2.6;
+     }   
+     & p{
+         font-size: $size * 1.8;
+     }
+    }
+}
+.overlay{
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #00000075;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    &-index{
+        z-index: 3;
+    }
+}
