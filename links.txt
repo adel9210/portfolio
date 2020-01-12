@@ -1,21 +1,40 @@
-Basra =>
-https://goo.gl/5uwEWj
-https://adelabodoma.github.io/portfolio//Basra%20-%20Adel%20Sadek//index.html#
+HTML Landing Pages 
+////////////////////////////////////////////////////////////////////
+Trillo=>
+https://cdn.statically.io/gh/adelabodoma/trillo/master/index.html
+
+Nexter=> 
+https://cdn.statically.io/gh/adelabodoma/nexter/master/index.html
 
 Avonmore=>
-https://adelabodoma.github.io/portfolio/Avonmore/
+https://adelabodoma.github.io/portfolio/Avonmore/index.html
+
+Natours=> Not Complete yet!
+https://cdn.statically.io/gh/adelabodoma/Natours/gh-page/index.html
+
+Solar System =>
+https://cdn.statically.io/gh/adelabodoma/SalarSystem/master/index.html
 
 ColorGame =>
 https://adelabodoma.github.io/portfolio//ColorGame/index.html
 
-Solar System =>
-https://codepen.io/adelabodoma92/full/wjVyMm
+
+
+JavaScript Challanges 
+
+Basra =>
+https://adelabodoma.github.io/portfolio//Basra%20-%20Adel%20Sadek//index.html#
 
 Budget=> 
 https://codepen.io/adelabodoma92/full/KJoPMY
 
+Calories Counter=> Native JavaScript
+https://cdn.statically.io/gh/adelabodoma/caloriesCounter/master/index.html
+
+SelectJS=>
+https://cdn.statically.io/gh/adelabodoma/selectjs/master/index.html
+
 Drag =>
 https://adelabodoma.github.io/portfolio//lab3%20Drag%20&%20Drop/index.html
 
-=> Ominda
-https://adelabodoma.github.io/portfolio//p3/resources/index.html
+
