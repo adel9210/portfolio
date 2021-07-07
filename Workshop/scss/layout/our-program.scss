@@ -1,0 +1,90 @@
+/*
+********** Our-Programs **********
+*/
+.our-program{
+    background-image: url("../images/img-8.jpg");
+    @include background-position(center, cover, no-repeat);
+    color: $white-color;
+    position: relative;
+    .container {
+        .row{
+            @include alignment(center, unset, unset);
+        }
+    }
+    .head-title{
+        position: relative;
+        z-index: 3;
+    }
+    .main-box{
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-right: 60px; /*45 for rotate*/;
+        z-index: 3;
+        &:last-child{
+            margin-right: 0;
+        }
+        .box-content{
+            width: $size * 15;
+            height: $size * 15;
+            border: 3px solid $white-color;
+            margin: $size $size;
+            @include alignment(center, center, unset);
+            &:hover{
+                background-color: $main-color;
+                cursor: pointer;
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+            }
+            div{
+                -webkit-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                img{
+                    width: 50%;
+                }
+                p{
+                    font-family: $calibrii;
+                    font-size: $size * 1.8;
+                }
+                .icon-plus{
+                    font-family: $segoeuil;
+                    font-size: $size * 2.5;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+
+
+    // Media Query
+    @media screen and(max-width: 991px){
+        &{
+            .main-box{
+                margin-right: $size * 3.7;            
+                .box-content{
+                    width: $size * 10;
+                    height: $size * 10;
+                    div{
+                        p{
+                            font-size: $size * 1.3;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    @media screen and(max-width: 767px) {
+        .main-box{
+            -webkit-transform: none;
+                    transform: none;
+            margin: 0; 
+            margin-right: $size / 2;
+            .box-content{
+                div{
+                    -webkit-transform: none;
+                            transform: none
+                }
+            }
+        }
+    }
+}

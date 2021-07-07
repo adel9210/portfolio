@@ -1,0 +1,51 @@
+/*
+********** Our-latest **********
+*/
+.our-latest{
+    font-family: $segoeui;
+    .latest-items{
+        @include alignment(space-between, end, column);
+        .latest-d{
+            font-size: $size * 6;
+        }
+        .latest-m{
+            font-size: $size * 3;
+        }
+        .latest-dy{
+            font-size: $size * 1.5;
+        }
+        .latest-info{
+            font-family: $calibrii;
+            font-size: $size * 1.6;
+        }
+        .button-outline{
+            background-color: $gray-color-1;
+            border-radius: 0;
+            border: 0;
+            color: $white-color;
+            padding: $size * 1.2 $size *2;
+        }
+    }
+    .box{
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}){
+                background-image: url("../images/img-#{$i + 8}.jpg");
+                @include background-position(top, cover, no-repeat);
+            }
+        }
+        &:hover .button-outline{
+            border: 1px solid $white-color;
+            background-color: transparent;
+        }
+        &:hover{
+            background: $accent-color;
+            -webkit-transition: all 1s ;
+            transition: all 1s ;
+            cursor: pointer;
+        }
+        *{ /* For make elements float above overlay */
+            position: relative;
+            z-index: 3;
+        }
+    }
+}

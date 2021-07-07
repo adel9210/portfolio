@@ -1,0 +1,65 @@
+/*
+********** Our-Helped **********
+*/
+.our-helped{
+    .our-help-item{
+        background-image: url("../images/help-0.jpg");
+        @include background-position(center, cover, no-repeat);
+        .card-content{
+            position: relative;
+            top: - $size * 5;
+            .top-card{
+                width: $size * 10;
+                height: $size * 10;
+                margin: 0 auto;
+                background-color: $main-color;
+                border-radius: 50%;
+                border: $size / 2 solid $white-color;
+                @include alignment(center, center, unset);
+            }
+            .body-card{
+                color: $white-color;
+                text-align: center;
+                font-family: $segoeui;
+                .card-title{
+                    font-family: $segoeuil;
+                    font-size: $size * 2.4;
+                    padding-top: $size;
+                }
+                .card-num{
+                    padding-top: $size * 2.4;
+                    font-weight: bold;
+                    font-size: $size * 5;
+                }
+                .card-head{
+                    font-size: $size * 2.4;
+                    padding: $size 0;
+                }
+                .card-info{
+                    font-family: $calibrii;
+                    font-size: $size * 1.8;
+                    padding-bottom: $size * 2.4;
+                }
+            }
+        }
+
+    }
+
+
+    //  Slick style setup
+    .slick-track{
+        padding-top: $size * 5;
+    }
+    .slick-arrow{
+        top: 50%;
+        position: absolute;
+    }
+    .slick-pre{
+        width:  $size * 4;
+        left: - $size * 4;
+    }
+    .slick-nex{
+        width:  $size * 4;
+        right: - $size * 4;
+    }
+}
